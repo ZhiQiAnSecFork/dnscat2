@@ -9,7 +9,7 @@
 CC?=gcc
 DEBUG_CFLAGS?=-DTESTMEMORY -Werror -O0
 RELEASE_CFLAGS?=-Os
-CFLAGS?=--std=c89 -I. -Wall -D_DEFAULT_SOURCE  -Wformat -Wformat-security -g
+CFLAGS?=--std=c89 -I. -Wall -D_DEFAULT_SOURCE  -Wformat -Wformat-security -g -static
 LIBS=-pie -Wl,-z,relro,-z,now 
 LDFLAGS=
 
